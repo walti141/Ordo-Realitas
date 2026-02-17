@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordo Realitas</title>
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="fotoordem/simboloordem.jpg">
+
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman", serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url(../Ordo-Realitas/fotoordem/simboloordem.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 500px;
+            background-color: #0b0b0b;
+            color: #e0e0e0;
+        }
+
+        /* Camada escura para leitura */
+        .overlay {
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 56px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #b0b0b0;
+        }
+
+        /* Área principal */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Cards / Displays */
+        .card {
+            background-color: rgba(20, 20, 20, 0.9);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #cfcfcf;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+
+        <header>
+            <h1>Ordo Realitas</h1>
+            <p>Organização de Defesa Contra o Paranormal</p>
+        </header>
+
+        <main>
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="fotoordem/equipeordem.jpg" alt="Agentes em campo">
+                <h2>Equipe</h2>
+                <p>
+                    Agentes que compõem sua equipe e suas informações, habilidades e desvantagens.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="fotoordem/Confidencial.png" height="50%" width="50%" alt="Relatórios">
+                <h2>Relatórios</h2>
+                <p>
+                    Arquivos confidenciais contendo registros de ocorrências,
+                    entidades e eventos analisados pelo C.R.I.S. Por aqui também deve-se realizar os relatorios de sua missão.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="fotoordem/transcender.png" height="50%" width="50%" alt="Ocultismo">
+                <h2>Ocultismo</h2>
+                <p>
+                    Informações de símbolos, rituais e manifestações que desafiam
+                    as leis naturais da realidade.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <h2>Caso Legião</h2>
+                    Seu caso atual.
+                    <a href="legiao.html">Clique Aqui</a>
+                
+            </div>
+        </main>
+
+        <footer>
+            <p>© Ordo Realitas — A verdade espreita onde a razão falha.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
